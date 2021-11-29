@@ -29,9 +29,10 @@ from tensorflow.keras.models import load_model
 
 import sys
 sys.path.append('models')
-from official.nlp.data import classifier_data_lib
-from official.nlp.bert import tokenization
-from official.nlp import optimization
+import official.nlp.data.classifier_data_lib
+import official.nlp.data.tokenization
+import official.nlp.data.optimization
+
 import seaborn as sns
 
 from google.colab import drive
