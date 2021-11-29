@@ -114,6 +114,8 @@ Expected = {
     "Review":{"min":1,"max":2000}
 }
 
+logging.basicConfig(filename='record.log', level=logging.DEBUG, format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
+
 @app.route('/')
 def indexes():
   
