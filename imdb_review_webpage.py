@@ -123,6 +123,7 @@ def indexes():
 @app.route('/submitted', methods=['POST'])
 def submitted():
   print "I am inside submitted"
+  sys.stdout.flush()
   content = request.form['text']
   errors = []
 
@@ -135,5 +136,5 @@ def submitted():
 
   return render_template('MovieReview.html',prediction= 'Movie review is '+ prediction[0] )
 
-app.run()
+app.run(debug=True)
 
