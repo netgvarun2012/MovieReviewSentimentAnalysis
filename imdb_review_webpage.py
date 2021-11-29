@@ -33,8 +33,6 @@ import official.nlp.data.classifier_data_lib
 import official.nlp.data.tokenization
 import official.nlp.data.optimization
 
-import seaborn as sns
-
 from google.colab import drive
 drive.mount('/content/gdrive')
 
@@ -94,13 +92,6 @@ def to_feature_map(text, label):
 model = load_model("/content/gdrive/MyDrive/IMDBPredictions/IMDB_Predict.h5",custom_objects={'KerasLayer': hub.KerasLayer})
 
 model.summary()
-
-sample_example = ["Please watch this Movie!!"]
-test_data = tf.data.Dataset.from_tensor_slices((sample_example, [1]*len(sample_example)))
-test_data = test_data.map(to_feature_map).batch(1)
-preds = model.predict(test_data)
-threshold = 0.5
-['positive' if pred >= threshold else 'negative' for pred in preds]
 
 from flask import Flask, request, jsonify, url_for, render_template
 import uuid
