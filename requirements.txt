@@ -12,7 +12,6 @@ tensorflow-model-optimization>=0.2.1
 tensorflow-datasets
 tensorflow-addons
 tf-models-official
-tensorflow-text
 dataclasses
 gin-config
 tf_slim>=1.1.0
