@@ -122,6 +122,7 @@ def indexes():
 
 @app.route('/submitted', methods=['POST'])
 def submitted():
+  print "I am inside submitted"
   content = request.form['text']
   errors = []
 
