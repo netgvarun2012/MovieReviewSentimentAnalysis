@@ -3,9 +3,9 @@ flask_ngrok==0.0.25
 matplotlib==3.4.3
 numpy==1.19.2
 protobuf==3.19.1
-tensorflow_cpu==2.6.0
+tensorflow_cpu
 tensorflow_hub==0.12.0
 gunicorn
-tf-models-official==2.3.0
+tf-models-official
 tensorflow-text
 google-colab
