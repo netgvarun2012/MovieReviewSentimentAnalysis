@@ -8,3 +8,4 @@ tensorflow_cpu==2.7.0
 tensorflow_hub==0.12.0
 gunicorn
 tf-models-official
+tensorflow-text
