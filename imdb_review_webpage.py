@@ -110,10 +110,6 @@ app = Flask(__name__,template_folder='/content/gdrive/MyDrive/IMDBPredictions/te
             static_folder='/content/gdrive/MyDrive/IMDBPredictions/static')
 run_with_ngrok(app)   #starts ngrok when the app is run
 
-gunicorn_logger = logging.getLogger('gunicorn.error')
-app.logger.handlers = gunicorn_logger.handlers
-app.logger.setLevel(gunicorn_logger.level)
-
 Expected = {
     "Review":{"min":1,"max":2000}
 }
