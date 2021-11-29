@@ -24,7 +24,7 @@ import numpy as np
 import tensorflow as tf
 import tensorflow_hub as hub
 import matplotlib.pyplot as plt
-
+import logging
 from tensorflow.keras.models import load_model
 
 import sys
@@ -110,6 +110,10 @@ app = Flask(__name__,template_folder='/content/gdrive/MyDrive/IMDBPredictions/te
             static_folder='/content/gdrive/MyDrive/IMDBPredictions/static')
 run_with_ngrok(app)   #starts ngrok when the app is run
 
+gunicorn_logger = logging.getLogger('gunicorn.error')
+app.logger.handlers = gunicorn_logger.handlers
+app.logger.setLevel(gunicorn_logger.level)
+
 Expected = {
     "Review":{"min":1,"max":2000}
 }
@@ -122,10 +126,10 @@ def indexes():
 
 @app.route('/submitted', methods=['POST'])
 def submitted():
-  print "I am inside submitted"
   sys.stdout.flush()
   content = request.form['text']
   errors = []
+  app.logger.debug('I am inside submitted')
 
   sample_example = [content]
   test_data = tf.data.Dataset.from_tensor_slices((sample_example, [1]*len(sample_example)))
