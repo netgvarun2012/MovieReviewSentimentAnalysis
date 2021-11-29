@@ -30,8 +30,8 @@ from tensorflow.keras.models import load_model
 import sys
 sys.path.append('models')
 import official.nlp.data.classifier_data_lib
-import official.nlp.data.tokenization
-import official.nlp.data.optimization
+import official.nlp.bert.tokenization
+import official.nlp.optimization
 
 from google.colab import drive
 drive.mount('/content/gdrive')
