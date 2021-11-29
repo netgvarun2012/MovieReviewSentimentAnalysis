@@ -21,5 +21,3 @@ opencv-python-headless
 pyyaml
 gunicorn>=19.9.0
 Pillow
--e git+https://https://github.com/philferriere/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI
-
