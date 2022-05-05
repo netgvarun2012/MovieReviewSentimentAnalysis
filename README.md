@@ -8,5 +8,7 @@ This is a simple project to demonstrate the power of AI when dealing with sequen
 ## Technologies used
 Bert Transformer, Tensorflow, Python.
 
-![image](https://user-images.githubusercontent.com/93938450/166939841-1348211f-ca21-4d0c-8e02-257110abed01.png)
+
+
+![image](https://user-images.githubusercontent.com/93938450/166940217-b169a11f-7b61-42ae-8551-d128b13b51ff.png)
 
