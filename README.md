@@ -10,6 +10,8 @@ LSTMs, Tensorflow, Python.
 
 
 
-![image](https://user-images.githubusercontent.com/93938450/166940217-b169a11f-7b61-42ae-8551-d128b13b51ff.png)    ![image](https://user-images.githubusercontent.com/93938450/166940703-7912c949-e259-4558-856f-811c447b4d78.png)
+![image](https://user-images.githubusercontent.com/93938450/166940217-b169a11f-7b61-42ae-8551-d128b13b51ff.png)   
+
+![image](https://user-images.githubusercontent.com/93938450/166940703-7912c949-e259-4558-856f-811c447b4d78.png)
 
 
