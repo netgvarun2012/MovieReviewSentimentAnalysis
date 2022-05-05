@@ -21,6 +21,10 @@ LSTMs, Tensorflow, Python.
   Output of SIGMOID function will be between 0 and 1 with :
   1- Keep it.
   0 - Forget it!
+  
+- Then, we will decide which information we are going to store in cell state 'Ct'
+- Then, we will update the old cell state 'Ct-1' to the new cell state 'Ct' (essentially, perform or execute the actions of 'forget' and 'add' that we decided in previous steps)
+- Lastly, we will decide what do we output for ht. This output will be based on the cell state but it's would be just a filtered version.
 
 
 
