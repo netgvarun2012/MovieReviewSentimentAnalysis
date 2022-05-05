@@ -15,14 +15,12 @@ LSTMs, Tensorflow, Python.
 ![image](https://user-images.githubusercontent.com/93938450/166941675-249658d2-849f-4491-a520-ddffbf2df602.png)
 
 - We have Forget gate first where we decide what information are we going to forget/throw away from the cell state ‘Ct-1’. 
-- Steps: 
+- **Steps**: 
+  Pass Ht-1 and Xt, then we perform linear weighted sum, then we pass it into a SIGMOID function!
 
-Pass Ht-1 and Xt, then we perform linear weighted sum, then we pass it into a SIGMOID function!
-
-Output of SIGMOID function will be between 0 and 1 with :
-
-1- Keep it.
-0 - Forget it!
+  Output of SIGMOID function will be between 0 and 1 with :
+  1- Keep it.
+  0 - Forget it!
 
 
 
