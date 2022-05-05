@@ -8,6 +8,18 @@ This is a simple project to demonstrate the power of AI when dealing with sequen
 ## Technologies used
 LSTMs, Tensorflow, Python.
 
+## Concepts
+
+![image](https://user-images.githubusercontent.com/93938450/166941179-8ace3f56-9d63-4c87-91d5-2664706423f4.png)
+![image](https://user-images.githubusercontent.com/93938450/166941348-04f68832-6aa0-43fa-9844-b8e490bc7b11.png)
+
+- We have Forget gate first where we decide what information are we going to forget/throw away from the cell state ‘Ct-1’. 
+- Steps: 
+Pass Ht-1 and Xt, then we perform linear weighted sum, then we pass it into a SIGMOID function!
+Output of SIGMOID function will be between 0 and 1 with :
+1  Keep it.
+0  Forget it!
+
 
 
 ![image](https://user-images.githubusercontent.com/93938450/166940217-b169a11f-7b61-42ae-8551-d128b13b51ff.png)   
