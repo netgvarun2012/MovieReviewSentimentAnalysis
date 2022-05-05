@@ -11,7 +11,6 @@ LSTMs, Tensorflow, Python.
 ## Concepts
 
 ![image](https://user-images.githubusercontent.com/93938450/166941179-8ace3f56-9d63-4c87-91d5-2664706423f4.png)
-
 ![image](https://user-images.githubusercontent.com/93938450/166942183-af7d42a1-50a5-4fcf-9f41-bb5d5ddec59d.png)
 
 - We have Forget gate first where we decide what information are we going to forget/throw away from the cell state ‘Ct-1’. 
